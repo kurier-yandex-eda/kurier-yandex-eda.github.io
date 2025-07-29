@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Содержимое index.html (уже обновлённый код вставим ниже) -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta property="og:title" content="Работа курьером Яндекс Еда" />
+  <meta property="og:description" content="Доход до 230 000 ₽ в месяц. Выбирай район и начинай зарабатывать уже сегодня!" />
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/10431/10431639.png" />
+  <meta property="og:url" content="https://clck.ru/3NMzBE" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10431/10431639.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Работа курьером в Яндекс Еда. Подключение за 10 минут. Высокий доход и свободный график!">
+  <title>Работа курьером в Яндекс Еда</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Rubik', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffcc00;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #000;
+    }
+    .hero {
+      background: #000;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #ffcc00;
+      color: #000;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e6b800;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    footer {
+      background: #f3f3f3;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .cities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .city {
+      background: #f9f9f9;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .city:hover {
+      background: #ffeb99;
+    }
+    input#city-search {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+  </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N63TLVNCLJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N63TLVNCLJ');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Работа курьером в Яндекс Еда</h1>
+  </header>
+  <section class="hero">
+    <h2>Подключайся за 10 минут</h2>
+    <p>Свободный график, быстрые выплаты и надёжный доход</p>
+    <a class="btn" href="https://clck.ru/3NMzBE" target="_blank">Стать курьером</a>
+  </section>
+  <section>
+    <h3>Почему это удобно</h3>
+    <div class="grid grid-3">
+      <div>
+        <h4>Гибкий график</h4>
+        <p>Работай в удобное время — утром, днём или вечером.</p>
+      </div>
+      <div>
+        <h4>Доход от 3500 ₽/день</h4>
+        <p>Зарабатывай больше, если готов активно доставлять.</p>
+      </div>
+      <div>
+        <h4>Простой старт</h4>
+        <p>Оформление за 10 минут, без собеседований и опыта.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>С заботой о вас</h3>
+    <div class="grid grid-3">
+      <div>
+        <h4>Страховка</h4>
+        <p>Оформляется автоматически при каждой смене.</p>
+      </div>
+      <div>
+        <h4>Поддержка 24/7</h4>
+        <p>Поможем в любой ситуации, всегда на связи.</p>
+      </div>
+      <div>
+        <h4>Льготы</h4>
+        <p>Скидки на топливо, еду и обслуживание техники.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Выберите ваш город</h3>
+    <input type="text" id="city-search" placeholder="Начните вводить город...">
+    <div class="cities-list" id="cities-list"></div>
+  </section>
+  <section style="text-align: center">
+    <h3>Стать курьером — это просто</h3>
+    <p>Заполни анкету и начни зарабатывать уже сегодня</p>
+    <a class="btn" href="https://clck.ru/3NMzBE" target="_blank">Подключиться сейчас</a>
+  </section>
+  <footer>
+    <p>&copy; 2025 Курьер Яндекс Еда | Все права защищены</p>
+  </footer>
+  <script>
+    const cities = ["Москва", "Санкт-Петербург", "Казань", "Нижний Новгород", "Самара", "Воронеж", "Пермь", "Уфа", "Тюмень", "Омск", "Челябинск", "Хабаровск", "Ростов-на-Дону", "Краснодар", "Красноярск", "Тула", "Иркутск", "Сочи", "Барнаул", "Владивосток", "Киров", "Саратов", "Ярославль", "Томск", "Ижевск", "Махачкала", "Оренбург", "Рязань", "Липецк", "Астрахань", "Курск", "Брянск", "Тверь", "Владимир", "Чебоксары", "Пенза", "Набережные Челны", "Калуга", "Белгород", "Старый Оскол", "Архангельск", "Севастополь", "Симферополь", "Якутск", "Калининград", "Грозный", "Новокузнецк", "Кемерово", "Сургут", "Нижневартовск", "Комсомольск-на-Амуре"];
+    const list = document.getElementById("cities-list");
+    const input = document.getElementById("city-search");
+    function renderCities(filter = "") {
+      list.innerHTML = "";
+      cities.filter(c => c.toLowerCase().includes(filter.toLowerCase())).forEach(c => {
+        const div = document.createElement("div");
+        div.className = "city";
+        div.textContent = c;
+        div.onclick = () => window.open("https://clck.ru/3NMzBE", "_blank");
+        list.append(div);
+      });
+    }
+    input.addEventListener("input", function() {
+      renderCities(this.value);
+    });
+    renderCities();
+  </script>
+
+<div style="font-size:0.9rem; color:#888; padding-top:2rem;">
+  <p>Работа курьером в Яндекс Еда доступна в городах: Москва, Санкт-Петербург, Казань, Нижний Новгород, Самара, Воронеж, Пермь, Уфа, Тюмень, Омск, Челябинск, Хабаровск, Ростов-на-Дону, Краснодар, Красноярск, Тула, Иркутск, Сочи, Барнаул, Владивосток, Киров, Саратов, Ярославль, Томск, Ижевск, Махачкала, Оренбург, Рязань, Липецк, Астрахань, Курск, Брянск, Тверь, Владимир, Чебоксары, Пенза, Набережные Челны, Калуга, Белгород, Старый Оскол, Архангельск, Севастополь и другие.</p>
+  <p>Ищете: работа Тула, работа Казань, работа курьером Воронеж, Яндекс Еда Уфа, вакансия курьера Омск, подработка в Сочи? Вы на правильном пути — заполните анкету и начните зарабатывать уже сегодня!</p>
+</div>
+</body>
+</html>
